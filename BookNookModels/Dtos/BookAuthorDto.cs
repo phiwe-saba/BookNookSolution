@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookNookModels.Dtos
 {
-    public class BookDto
+    public class BookAuthorDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -18,6 +18,7 @@ namespace BookNookModels.Dtos
         public int CategoryId { get; set; }
         public string CategoryGenre { get; set; }
         public int AuthorId { get; set; }
-        public string AuthorsName { get; set; }
+        public string AuthorName { get; set; }
+
     }
 }

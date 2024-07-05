@@ -7,8 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Books.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.19" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookNookModels\BookNookModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Books.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Books.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Books.razor" />
   </ItemGroup>
 
 </Project>

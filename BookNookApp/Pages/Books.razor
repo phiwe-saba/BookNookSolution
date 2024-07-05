@@ -1,0 +1,24 @@
+﻿@page "/"
+@inherits BooksBase
+
+@if(BooksAuthor == null)
+{
+    <h3>Loading books...</h3>
+}
+else
+{
+    <h3 class="mb-5">Books</h3>
+
+    var bookCount = Book.Count();
+
+    @if(bookCount > 0)
+    {
+        const int itemsPerRow = 4;
+        var bookRowList = new List<BookAuthorDto>();
+
+        @for (int i = 0; i < bookRowList; i++)
+        {
+            bookRowList = Books.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+        }
+    }
+}

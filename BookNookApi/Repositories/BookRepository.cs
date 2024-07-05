@@ -15,7 +15,29 @@ namespace BookNookApi.Repositories
 
         public BookNookDbContext BookNookDbContext { get; }
 
+        public async Task<IEnumerable<Author>> GetAllAuthors()
+        {
+            var authors = await this.bookNookDbContext.Authors.ToListAsync();
+            return authors;
+        }
+
+        public async Task<IEnumerable<BookAuthor>> GetAllBookAuthors()
+        {
+            var bookAuthors = await this.bookNookDbContext.BookAuthors.ToListAsync();
+            return bookAuthors;
+        }
+
+        public Task<BookAuthor> GetAuthor(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Book> GetBook(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<BookAuthor> GetBookAuthor(int id)
         {
             throw new NotImplementedException();
         }
@@ -33,6 +55,11 @@ namespace BookNookApi.Repositories
         }
 
         public Task<BookCategory> GetCategory(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Author> IBookRepository.GetAuthor(int id)
         {
             throw new NotImplementedException();
         }

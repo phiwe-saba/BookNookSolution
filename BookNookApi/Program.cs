@@ -2,6 +2,7 @@ using BookNookApi.Data;
 using BookNookApi.Repositories;
 using BookNookApi.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(policy =>
+    policy.WithOrigins("https://localhost:7050", "https://localhost:7050")
+    .AllowAnyMethod()
+    .WithHeaders(HeaderNames.ContentType));
 
 app.UseHttpsRedirection();
 

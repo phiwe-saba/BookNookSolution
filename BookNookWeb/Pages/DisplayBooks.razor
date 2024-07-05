@@ -1,0 +1,16 @@
+﻿@inherits DisplayBooksBase
+
+@foreach (var item in bookRowList)
+{
+    <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+            <img src="@item.ImageUrl" class="card-img-top" alt="">
+            <div class="card-body">
+                <h6 class="card-title">@item.Title</h6>
+                <p class="card-text">@item.AuthorName</p>
+                <p class="card-text">@item.Price.ToString("C")</p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+}

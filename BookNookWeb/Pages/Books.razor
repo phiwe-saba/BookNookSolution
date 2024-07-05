@@ -1,0 +1,30 @@
+﻿@page "/"
+@inherits BooksBase
+
+@if (BookAuthors == null)
+{
+    <h3>Loading books...</h3>
+}
+else
+{
+    <h3 class="mb-5">Best-selling and Popular eBooks</h3>
+
+    var bookCount = BookAuthors.Count();
+
+    @if (bookCount > 0)
+    {
+        const int itemsPerRow = 4;
+        var bookRowList = new List<BookAuthorDto>();
+
+        @for (int i = 0; i < bookCount; i++)
+        {
+            bookRowList = BookAuthors.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+
+            <div class="container mt-5">
+                <div class="row text-center">
+                    <DisplayBooksBase BookAuthors = "@bookRowList"></DisplayBooksBase>
+                </div>
+            </div>
+        }
+    }
+}

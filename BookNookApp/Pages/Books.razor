@@ -1,24 +1,43 @@
 ﻿@page "/"
 @inherits BooksBase
 
-@if(BooksAuthor == null)
+@if(BookAuthors == null)
 {
     <h3>Loading books...</h3>
 }
 else
 {
-    <h3 class="mb-5">Books</h3>
+    <h3 class="mb-5">Best-selling and Popular eBooks</h3>
 
-    var bookCount = Book.Count();
+    var bookCount = BookAuthors.Count();
 
-    @if(bookCount > 0)
+    @if (bookCount > 0)
     {
         const int itemsPerRow = 4;
         var bookRowList = new List<BookAuthorDto>();
 
-        @for (int i = 0; i < bookRowList; i++)
+        @for (int i = 0; i < bookCount; i++)
         {
-            bookRowList = Books.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+            bookRowList = BookAuthors.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+
+            <div class="container mt-5">
+                <div class="row">
+                    @foreach (var item in bookRowList)
+                    {
+                        <div class="card" style="width: 18rem;">
+                            <a href="#">
+                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">@item.Title</h4>
+                                    <h4 class="">@item.AuthorName</h4>
+                                    <p>@item.Price.ToString("R")</p>
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
         }
     }
 }

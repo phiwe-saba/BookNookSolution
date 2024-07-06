@@ -13,5 +13,18 @@ namespace BookNookWeb.Pages
         {
             BookAuthors = await BookService.GetBooks();
         }
+
+        protected IOrderedEnumerable<IGrouping<int, BookAuthorDto>> GetGroupedBooksByGenre()
+        {
+            return from book in BookAuthors
+                   group book by book.CategoryId into booksbyGenre
+                   orderby booksbyGenre.Key
+                   select booksbyGenre;
+        }
+
+        protected string GetGenreByName(IGrouping<int, BookAuthorDto> groupedBooksDtos)
+        {
+            return groupedBooksDtos.FirstOrDefault(pg => pg.CategoryId == groupedBooksDtos.Key).CategoryGenre;
+        }
     }
 }

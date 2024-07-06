@@ -3,6 +3,7 @@ using BookNookApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookNookApi.Migrations
 {
     [DbContext(typeof(BookNookDbContext))]
-    partial class BookNookDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240706131920_AddedNewData")]
+    partial class AddedNewData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -488,7 +491,7 @@ namespace BookNookApi.Migrations
                             CategoryId = 4,
                             Description = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, itaque tempore autem, ullam vel veritatis laudantium enim officiis nemo quasi, dicta praesentium corrupti minus? Omnis fuga voluptatum deserunt ex ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed esse non vel, alias fuga pariatur aperiam dolorum numquam tempore possimus, aliquam soluta!",
                             ISBN = "978-3-16-148410-0",
-                            ImageUrl = "images/75434345.jpg",
+                            ImageUrl = "images/58490567.jpg",
                             Price = 250m,
                             Qty = 120,
                             Title = "The Fixer"

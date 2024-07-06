@@ -26,5 +26,23 @@ namespace BookNookApi.Extensions
                         AuthorName = author.Name
                     }).ToList();
         }
+
+        public static BookAuthorDto ConvertToDto(this BookAuthor bookAuthor, BookCategory bookCategory, Author author)
+        {
+            return new BookAuthorDto
+            {
+                Id = bookAuthor.Book.Id,
+                Title = bookAuthor.Book.Title,
+                Description = bookAuthor.Book.Description,
+                ImageUrl = bookAuthor.Book.ImageUrl,
+                ISBN = bookAuthor.Book.ISBN,
+                Price = bookAuthor.Book.Price,
+                Qty = bookAuthor.Book.Qty,
+                CategoryId = bookAuthor.Book.CategoryId,
+                CategoryGenre = bookCategory.Genre,
+                AuthorId = bookAuthor.Author.Id,
+                AuthorName = author.Name
+            }; 
+        }
     }
 }

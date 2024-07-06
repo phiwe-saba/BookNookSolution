@@ -1,4 +1,5 @@
-﻿using BookNookApi.Extensions;
+﻿using BookNookApi.Entities;
+using BookNookApi.Extensions;
 using BookNookApi.Repositories.Contracts;
 using BookNookModels.Dtos;
 using Microsoft.AspNetCore.Http;
@@ -36,6 +37,34 @@ namespace BookNookApi.Controllers
                     var booksDtos = books.ConvertToDto(bookCategories, authors, bookAuthors);
                     return Ok(booksDtos);
                 }
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<BookAuthorDto>> GetBookAuthor(int id)
+        {
+            try
+            {
+                var bookAuthor = await this.bookRepository.GetBookAuthor(id);
+
+                if (bookAuthor == null || bookAuthor.Book == null || bookAuthor.Author == null)
+                {
+                    return BadRequest("Book or author not found");
+                }
+
+                var bookCategory = await this.bookRepository.GetCategory(bookAuthor.Book.CategoryId);
+
+                if (bookCategory == null)
+                {
+                    return BadRequest("Category not found"); 
+                }
+
+                var bookDto = bookAuthor.ConvertToDto(bookCategory, bookAuthor.Author);
+                return Ok(bookDto);
             }
             catch (Exception)
             {

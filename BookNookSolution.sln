@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookNookApi", "BookNookApi\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookNookModels", "BookNookModels\BookNookModels.csproj", "{F5EA82D9-11EA-4878-A21C-528094011813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookNookWeb", "BookNookWeb\BookNookWeb.csproj", "{2A4D9C62-38F6-44A9-A520-040B72F6E962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookNookWeb", "BookNookWeb\BookNookWeb.csproj", "{2A4D9C62-38F6-44A9-A520-040B72F6E962}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

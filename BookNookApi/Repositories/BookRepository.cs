@@ -27,19 +27,15 @@ namespace BookNookApi.Repositories
             return bookAuthors;
         }
 
-        public Task<BookAuthor> GetAuthor(int id)
+        public async Task<Book> GetBook(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<Book> GetBook(int id)
-        {
-            throw new NotImplementedException();
+            var book = await bookNookDbContext.Books.SingleOrDefaultAsync(c => c.Id == id);
+            return book;
         }
 
         public async Task<BookAuthor> GetBookAuthor(int id)
         {
-            var bookAuthor = await bookNookDbContext.BookAuthors.SingleOrDefaultAsync(ba => ba.Id == id);
+            var bookAuthor = await bookNookDbContext.BookAuthors.SingleOrDefaultAsync(c => c.Id == id);
             return bookAuthor;
         }
 
@@ -60,10 +56,10 @@ namespace BookNookApi.Repositories
             var category = await bookNookDbContext.BookCategories.SingleOrDefaultAsync(c => c.Id == id);
             return category;
         }
-
-        Task<Author> IBookRepository.GetAuthor(int id)
+        public async Task<Author> GetAuthor(int id)
         {
-            throw new NotImplementedException();
+            var author = await bookNookDbContext.Authors.SingleOrDefaultAsync(c => c.Id == id);
+            return author;
         }
     }
 }

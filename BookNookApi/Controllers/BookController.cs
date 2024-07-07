@@ -50,6 +50,8 @@ namespace BookNookApi.Controllers
             try
             {
                 var bookAuthor = await this.bookRepository.GetBookAuthor(id);
+                var author = await this.bookRepository.GetAuthor(id);
+                var book = await this.bookRepository.GetBook(id);
 
                 if (bookAuthor == null || bookAuthor.Book == null || bookAuthor.Author == null)
                 {

@@ -6,10 +6,15 @@
         <a href="/BookDetails/@item.Id">
             <div class="card h-200">
                 <img src="@item.ImageUrl" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h6 class="card-title">@item.Title</h6>
-                    <p class="card-title">@item.AuthorName</p>
-                    <p class="card-text">@item.Price.ToString("C")</p>
+                <div class="book-content">
+                    <div>
+                        <h3 class="card-title">@item.Title</h3>
+                    </div>
+                    <div>
+                        <h5>@item.AuthorName</h5>
+                    </div>
+                    <div>@item.Price.ToString("C")</div>
+                    <p class="card-text"></p>
                     <a href="" class="btn btn-primary">Add to cart</a>
                 </div>
             </div>

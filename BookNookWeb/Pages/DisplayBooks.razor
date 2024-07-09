@@ -1,4 +1,5 @@
-﻿@inherits DisplayBooksBase
+﻿@using System.Globalization
+@inherits DisplayBooksBase
 
 @foreach (var item in BookAuthors)
 {
@@ -13,7 +14,7 @@
                     <div>
                         <h5>@item.AuthorName</h5>
                     </div>
-                    <div>@item.Price.ToString("C")</div>
+                    <div>@item.Price.ToString("C ", CultureInfo.GetCultureInfo("en-ZA"))</div>
                     <p class="card-text"></p>
                     <a href="" class="btn btn-primary">Add to cart</a>
                 </div>

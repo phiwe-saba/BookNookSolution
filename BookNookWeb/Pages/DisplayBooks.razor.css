@@ -1,0 +1,50 @@
+﻿body {
+    background-color:aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.book-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    padding: 10px; /* Add space around the image */
+    background-color: #fff; /* Optional: background color for better spacing effect */
+}
+
+.card {
+    border: none; /* Remove border from card */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #ffc107; /* Bootstrap's text-warning color */
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}

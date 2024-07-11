@@ -3,6 +3,7 @@ using BookNookApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookNookApi.Migrations
 {
     [DbContext(typeof(BookNookDbContext))]
-    partial class BookNookDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240711194729_AddedRatingsAndFixedAuthorNames")]
+    partial class AddedRatingsAndFixedAuthorNames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -275,7 +278,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/2657._SX300_.jpg",
                             Price = 150m,
                             Qty = 100,
-                            Rating = "images/ratings/rating-20.png",
+                            Rating = "images/ratings/rating-20",
                             Title = "To Kill A Mockingbird"
                         },
                         new
@@ -287,7 +290,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/43641._SX300_.jpg",
                             Price = 125m,
                             Qty = 100,
-                            Rating = "images/ratings/rating-30.png",
+                            Rating = "images/ratings/rating-30",
                             Title = "Water for Elephants"
                         },
                         new
@@ -299,7 +302,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/4667024.jpg",
                             Price = 100m,
                             Qty = 100,
-                            Rating = "images/ratings/rating-10.png",
+                            Rating = "images/ratings/rating-10",
                             Title = "The Help"
                         },
                         new
@@ -311,7 +314,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/12232938._SX300_.jpg",
                             Price = 150m,
                             Qty = 100,
-                            Rating = "images/ratings/rating-15.png",
+                            Rating = "images/ratings/rating-15",
                             Title = "Lovely Bones"
                         },
                         new
@@ -323,7 +326,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/34184307._SX300_.jpg",
                             Price = 150m,
                             Qty = 100,
-                            Rating = "images/ratings/rating-35.png",
+                            Rating = "images/ratings/rating-35",
                             Title = "Code Girls"
                         },
                         new
@@ -335,7 +338,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/39832183.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-05.png",
+                            Rating = "images/ratings/rating-05",
                             Title = "The Guernsey"
                         },
                         new
@@ -347,7 +350,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/56359706._SX300_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-30.png",
+                            Rating = "images/ratings/rating-30",
                             Title = "Hollywood Horrors"
                         },
                         new
@@ -359,7 +362,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/56382342.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-15.png",
+                            Rating = "images/ratings/rating-15",
                             Title = "Vanderbilt"
                         },
                         new
@@ -371,7 +374,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/57005206._SX300_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "Capote's Women"
                         },
                         new
@@ -383,7 +386,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/58524608._SX300_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Why They Stay"
                         },
                         new
@@ -395,7 +398,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/59656615.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Vengeance Of The Pirate Queen"
                         },
                         new
@@ -407,7 +410,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/60197314.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Betting On You"
                         },
                         new
@@ -419,7 +422,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/60683957.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Check & Mate"
                         },
                         new
@@ -431,7 +434,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/63005207._SY475_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Gorgeous Gruesome Faces"
                         },
                         new
@@ -443,7 +446,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/65211796.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "Gator Country"
                         },
                         new
@@ -455,7 +458,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/80328993.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Mothtown"
                         },
                         new
@@ -467,7 +470,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/35335134.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "The Brutal Truth"
                         },
                         new
@@ -479,7 +482,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/36649339.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "Shades Of Blue"
                         },
                         new
@@ -491,7 +494,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/58443037.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "Chef's Kiss"
                         },
                         new
@@ -503,7 +506,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/58490567.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "The Diamond Eye"
                         },
                         new
@@ -515,7 +518,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/75434345.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "The Fixer"
                         },
                         new
@@ -527,7 +530,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/81067992.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-35.png",
+                            Rating = "images/ratings/rating-35",
                             Title = "The Armor Of Light"
                         },
                         new
@@ -539,7 +542,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/86033921.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Swarm"
                         },
                         new
@@ -551,7 +554,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/112974900.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-25.png",
+                            Rating = "images/ratings/rating-25",
                             Title = "To Free The Captives"
                         },
                         new
@@ -563,7 +566,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/112976344.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-40.png",
+                            Rating = "images/ratings/rating-40",
                             Title = "The Good Part"
                         },
                         new
@@ -575,7 +578,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/122658643.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Good Girls Don't Die"
                         },
                         new
@@ -587,7 +590,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/123262468._SY475_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-50.png",
+                            Rating = "images/ratings/rating-50",
                             Title = "Where He Can't Find You"
                         },
                         new
@@ -599,7 +602,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/123266603._SY475_.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-45.png",
+                            Rating = "images/ratings/rating-45",
                             Title = "Ghosts Of Honolulu"
                         },
                         new
@@ -611,7 +614,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/125084292.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-30.png",
+                            Rating = "images/ratings/rating-30",
                             Title = "A City On Mars"
                         },
                         new
@@ -623,7 +626,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/125423142.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-15.png",
+                            Rating = "images/ratings/rating-15",
                             Title = "The Hijacking Of American Flight 119"
                         },
                         new
@@ -635,7 +638,7 @@ namespace BookNookApi.Migrations
                             ImageUrl = "images/128126768.jpg",
                             Price = 250m,
                             Qty = 120,
-                            Rating = "images/ratings/rating-25.png",
+                            Rating = "images/ratings/rating-25",
                             Title = "A Woman I Know"
                         });
                 });

@@ -22,6 +22,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-20.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -33,6 +34,7 @@ namespace BookNookApi.Data
                 Price = 125,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-30.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -44,6 +46,7 @@ namespace BookNookApi.Data
                 Price = 100,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-10.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -55,6 +58,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-15.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -66,6 +70,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-35.png",
                 CategoryId = 1
             });
 
@@ -79,6 +84,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-05.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -90,6 +96,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-30.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -101,6 +108,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-15.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -112,6 +120,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -123,6 +132,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 2
             });
 
@@ -136,6 +146,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -147,6 +158,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -158,6 +170,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -169,6 +182,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -180,6 +194,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -191,6 +206,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 3
             });
 
@@ -204,6 +220,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -215,6 +232,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -226,6 +244,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -237,6 +256,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -248,6 +268,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 4
             });
 
@@ -261,6 +282,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-35.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -272,6 +294,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -283,6 +306,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-25.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -294,6 +318,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-40.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -305,6 +330,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 5
             });
 
@@ -318,6 +344,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-50.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -329,6 +356,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-45.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -340,6 +368,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-30.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -351,6 +380,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-15.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -362,6 +392,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
+                Rating = "images/ratings/rating-25.png",
                 CategoryId = 6
             });
 
@@ -569,7 +600,7 @@ namespace BookNookApi.Data
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 4,
-                Name = "Lovely Bones",
+                Name = "Alice ",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
@@ -635,7 +666,7 @@ namespace BookNookApi.Data
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 15,
-                Name = "Gator Country",
+                Name = "Rebeccas Renner",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
@@ -677,55 +708,55 @@ namespace BookNookApi.Data
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 22,
-                Name = "Jennifer Lyle",
+                Name = "Ken Follett",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 23,
-                Name = "Tracy K. Smith",
+                Name = "Jennifer Lyle",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 24,
-                Name = "Sophie Cousens",
+                Name = "Tracy K. Smith",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 25,
-                Name = "Christina Henry",
+                Name = "Sophie Cousens",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 26,
-                Name = "Darcy Coates",
+                Name = "Christina Henry",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 27,
-                Name = "Mark Harmon",
+                Name = "Darcy Coates",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 28,
-                Name = "Kelly And Zach Weinersmith",
+                Name = "Mark Harmon",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 29,
-                Name = "John Wigger",
+                Name = "Kelly And Zach Weinersmith",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 30,
-                Name = "Mary Haverstick",
+                Name = "John Wigger",
                 Biography = "Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus ex delectus! Ipsum quaerat exercitationem expedita placeat. Esse blanditiis, soluta perspiciatis tenetur unde corporis sequi eos cupiditate. Dolores, obcaecati explicabo"
             });
 

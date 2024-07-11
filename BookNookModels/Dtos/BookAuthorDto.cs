@@ -15,6 +15,7 @@ namespace BookNookModels.Dtos
         public string ISBN { get; set; }
         public decimal Price { get; set; }
         public int Qty { get; set; }
+        public string Rating { get; set; }
         public int CategoryId { get; set; }
         public string CategoryGenre { get; set; }
         public int AuthorId { get; set; }

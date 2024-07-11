@@ -1,4 +1,5 @@
 ﻿@page "/BookDetails/{Id:int}"
+@using System.Globalization
 @inherits BookDetailsBase
 
 @if (BookAuthor == null && ErrorMessage == null)
@@ -11,17 +12,19 @@ else if (ErrorMessage != null)
 }
 else
 {
-    <h3 class="mb-5">Book Details</h3>
     <div class="row">
         <div class="col-md-4">
             <img style="height: 90%; width: 100%;" src="@BookAuthor.ImageUrl"/>
         </div>
         <div class="col-md-6">
             <h3>@BookAuthor.Title</h3>
+            <h5>@BookAuthor.AuthorName</h5>
+            <p>@BookAuthor.Rating</p>
+            <hr />
             <p class="mb-4">@BookAuthor.Description</p>
             <p class="mb-4">
                 <b>
-                    @BookAuthor.Price.ToString("C")
+                    @BookAuthor.Price.ToString("C", CultureInfo.GetCultureInfo("en-ZA"))
                 </b>
             </p>
         </div>

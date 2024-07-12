@@ -22,7 +22,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-20.png",
+                Rating = "images/rating-20.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -34,7 +34,7 @@ namespace BookNookApi.Data
                 Price = 125,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-30.png",
+                Rating = "images/rating-30.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -46,7 +46,7 @@ namespace BookNookApi.Data
                 Price = 100,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-10.png",
+                Rating = "images/rating-10.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -58,7 +58,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-15.png",
+                Rating = "images/rating-15.png",
                 CategoryId = 1
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -70,7 +70,7 @@ namespace BookNookApi.Data
                 Price = 150,
                 Qty = 100,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-35.png",
+                Rating = "images/rating-35.png",
                 CategoryId = 1
             });
 
@@ -84,7 +84,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-05.png",
+                Rating = "images/rating-05.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -96,7 +96,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-30.png",
+                Rating = "images/rating-30.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -108,7 +108,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-15.png",
+                Rating = "images/rating-15.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -120,7 +120,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 2
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -132,7 +132,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 2
             });
 
@@ -146,7 +146,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -158,7 +158,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -170,7 +170,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -182,7 +182,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -194,7 +194,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 3
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -206,7 +206,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 3
             });
 
@@ -220,7 +220,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -232,7 +232,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -244,7 +244,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -256,7 +256,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 4
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -268,7 +268,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 4
             });
 
@@ -282,7 +282,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-35.png",
+                Rating = "images/rating-35.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -294,7 +294,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -306,7 +306,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-25.png",
+                Rating = "images/rating-25.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -318,7 +318,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-40.png",
+                Rating = "images/rating-40.png",
                 CategoryId = 5
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -330,7 +330,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 5
             });
 
@@ -344,7 +344,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-50.png",
+                Rating = "images/rating-50.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -356,7 +356,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-45.png",
+                Rating = "images/rating-45.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -368,7 +368,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-30.png",
+                Rating = "images/rating-30.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -380,7 +380,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-15.png",
+                Rating = "images/rating-15.png",
                 CategoryId = 6
             });
             modelBuilder.Entity<Book>().HasData(new Book
@@ -392,7 +392,7 @@ namespace BookNookApi.Data
                 Price = 250,
                 Qty = 120,
                 ISBN = "978-3-16-148410-0",
-                Rating = "images/ratings/rating-25.png",
+                Rating = "images/rating-25.png",
                 CategoryId = 6
             });
 

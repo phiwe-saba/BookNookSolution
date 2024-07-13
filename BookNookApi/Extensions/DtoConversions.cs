@@ -46,5 +46,23 @@ namespace BookNookApi.Extensions
                 AuthorName = author.Name
             }; 
         }
+
+        public static IEnumerable<CartItemDto> ConvertToDto(this IEnumerable<CartItem> cartItems, IEnumerable<Book> books)
+        {
+            return (from cartItem in cartItems
+                    join book in books
+                    on cartItem.BookId equals book.Id
+                    select new CartItemDto
+                    {
+                        Id = cartItem.Id,
+                        BookId = cartItem.BookId,
+                        BookTitle = book.Title,
+                        BookDescription = book.Description,
+                        ImageUrl = book.ImageUrl,
+                        Price = book.Price,
+                        Qty = cartItem.Qty,
+                        TotalPrice = book.Price * cartItem.Qty
+                    }).ToList();
+        }
     }
 }

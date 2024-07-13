@@ -17,6 +17,7 @@ builder.Services.AddDbContextPool<BookNookDbContext>(options =>
 );
 
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
 var app = builder.Build();
 

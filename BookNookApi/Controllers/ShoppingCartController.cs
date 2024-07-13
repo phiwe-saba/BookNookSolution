@@ -50,6 +50,63 @@ namespace BookNookApi.Controllers
             }
         }
 
-        
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<CartItemDto>> GetItem(int id)
+        {
+            try
+            {
+                var cartItem = await this.shoppingCartRepository.GetItem(id);
+
+                if (cartItem == null)
+                {
+                    return NotFound();
+                }
+
+                var book = await bookRepository.GetBook(cartItem.BookId);
+
+                if (book == null)
+                {
+                    return NotFound();
+                }
+
+                var cartItemDto = cartItem.ConvertToDto(book);
+
+                return Ok(cartItemDto);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<CartItemDto>> PostItem([FromBody] CartItemToAddDto cartItemToAddDto)
+        {
+            try
+            {
+                var newCartItem = await this.shoppingCartRepository.AddItem(cartItemToAddDto);
+
+                if (newCartItem == null)
+                {
+                    return NoContent();
+                }
+
+                var book = await bookRepository.GetBook(newCartItem.BookId);
+
+                if (book == null)
+                {
+                    throw new Exception($"Something went wrong when attempting to retrieve book (bookId:({cartItemToAddDto.BookId}))");
+                }
+
+                var newCartItemDto = newCartItem.ConvertToDto(book);
+
+                return CreatedAtAction(nameof(GetItem), new { id = newCartItemDto.Id }, newCartItemDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

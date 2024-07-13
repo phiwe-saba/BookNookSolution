@@ -64,5 +64,20 @@ namespace BookNookApi.Extensions
                         TotalPrice = book.Price * cartItem.Qty
                     }).ToList();
         }
+
+        public static CartItemDto ConvertToDto(this CartItem cartItem, Book book)
+        {
+            return new CartItemDto
+            {
+                Id = cartItem.Id,
+                BookId = cartItem.BookId,
+                BookTitle = book.Title,
+                BookDescription = book.Description,
+                ImageUrl = book.ImageUrl,
+                Price = book.Price,
+                Qty = cartItem.Qty,
+                TotalPrice = book.Price * cartItem.Qty
+            };
+        }
     }
 }

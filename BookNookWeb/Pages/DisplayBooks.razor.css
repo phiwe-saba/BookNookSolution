@@ -7,11 +7,13 @@ a {
 }
 
 .book-img {
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     width: 100%;
     padding: 10px; 
     background-color: #fff; 
+    margin: 0 0 20px;
+    justify-content: end;
 }
 
 .card {
@@ -24,6 +26,14 @@ a {
     justify-content: flex-start;
     align-items: center;
     padding-top: 0;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 60px;
 }
 
 .card-title {
@@ -43,9 +53,3 @@ a {
     color: black;
 }
 
-.book-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-}
